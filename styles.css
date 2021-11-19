@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", monospace;
+  
+  
+  
+}
+:root {
+  --light-blue: #2a85c5;
+  --dark-blue: #5f7b8f;
+  --light-camel: #cfcec5;
+  --light-green: #7b9696;
+  --dark-grey: #464646;
+  --mid-grey: #606060;
+  
+  --earthy-blue: #649790;
+  --dark-red: #ac0d42;
+  --white: #dcdcdc;
+  --super-white: #ffffff;
+}
+
+body {
+  background-color: var(--light-camel);
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  
+  
+  margin-top: 0;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  
+}
+.header img{
+  width: 20%;
+}
+.header h1 {
+  
+  align-self: center;
+  
+  color: var(--light-blue);
+  font-family: "Cairo", sans-serif;
+}
+
+.main {
+  z-index: 1;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.foods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+.food {
+  background-color: var(--white);
+  padding: 5%;
+  margin: 5%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.food h2 {
+  color: var(--white);
+  font-size: 3rem;
+}
+.food h3 {
+  font-family: "Cairo", sans-serif;
+  color: var(--dark-blue);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+h4 {
+  font-family: "Cairo", sans-serif;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: var(--dark-grey);
+}
+h5{
+  font-family: "Cairo", sans-serif;
+  margin-top: 5%;
+  color: var(--dark-grey);
+}
+.ingeredientsList {
+  list-style: none;
+  color: var(--dark-grey);
+  
+}
+.ingeredientsList li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+
+.titleBox {
+  height: 20px;
+  width: 100%;
+  padding: 20%;
+  background-color: var(--light-green);
+}
+
+@media screen and (max-width: 935px){
+  .header{
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 970px) {
+  .food h2 {
+    font-size: 2rem;
+  }
+  .header {
+    height: 130px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .food h2 {
+    font-size: 1rem;
+  }
+}
+
+.pics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.pics img{
+    margin-top: 5%;
+}
+
+.makingList li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.fact{
+  background-color: #cfcec5;
+  margin-top: 5%;
+  color: var(--dark-grey);
+  border-radius: 4%;
+  width: 60%;
+  padding: 5%;
+}
+.fact p{
+  color: var(--mid-grey);
+}
+
+.makingList{
+  color: var(--dark-grey);
+}
+
+.links a{
+  color: var(--light-blue);
+}
+
